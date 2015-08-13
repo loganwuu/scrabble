@@ -106,5 +106,18 @@
             //Assert
             $this->assertEquals(10, $result);
         }
+
+        function test_allCaps()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "a";
+
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>

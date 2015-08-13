@@ -45,8 +45,13 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
   * Input: "Q"
   * Output: 10
 
+9. Convert to capitalized letters only
+  * Input: "a"
+  * Output: 1
+
+
 multiple letters
-capitalization
+
 0, 1,2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
 
 ## Legal
