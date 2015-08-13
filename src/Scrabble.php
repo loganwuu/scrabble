@@ -9,7 +9,7 @@
             $score4_letters = array("F", "H", "V", "W", "Y");
             $score5_letters = array("K");
             $score8_letters = array("J"," X");
-            $score10_letters = array();
+            $score10_letters = array("Q", "Z");
 
             switch ($letter) {
                 case (in_array($letter, $score1_letters)):
@@ -29,6 +29,9 @@
 
                 case (in_array($letter, $score8_letters)):
                     return 8;
+
+                case (in_array($letter, $score10_letters)):
+                    return 10;
             }
         }
     }

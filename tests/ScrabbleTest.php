@@ -93,5 +93,18 @@
             //Assert
             $this->assertEquals(8, $result);
         }
+
+        function test_score10_letters()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "Q";
+
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals(10, $result);
+        }
     }
 ?>
