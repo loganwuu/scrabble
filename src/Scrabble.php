@@ -18,7 +18,8 @@
                 case (in_array($letter, $score3_letters)):
                     return 3;
 
-
+                case (in_array($letter, $score4_letters)):
+                    return 4;
             }
         }
     }

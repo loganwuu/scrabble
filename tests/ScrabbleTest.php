@@ -54,5 +54,22 @@
             //Assert
             $this->assertEquals(3, $result);
         }
+
+        function test_score4_letters()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "F";
+
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals(4, $result);
+        }
+
+
+
+
     }
 ?>
