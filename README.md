@@ -1,4 +1,4 @@
-# Scrabble Score
+# Scrabble Score Generator
 
 ##### A Scrabble Score-returning app built using BDD methodology. 8/13/2015
 
@@ -54,7 +54,7 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
   * Output: 3
 
 11. Only alphabetic letters are allowed
-  * Input: 0, 1,2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
+  * Input: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
   * Output: "Sorry, please only enter alphabetic letters."
 
 12. Only 7 or less letters are allowed
