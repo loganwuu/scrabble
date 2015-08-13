@@ -29,6 +29,17 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_score2_letters()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "D";
 
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
