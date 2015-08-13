@@ -6,6 +6,8 @@
             //Allow alphabetic character(s) only
             if (!ctype_alpha($letters)) {
                 return "Sorry, please only enter alphabetic letters.";
+            } elseif (strlen($letters) > 7) {
+                return "Sorry, please only enter 7 letters or less.";
             }
 
             //Convert to uppercase letters string

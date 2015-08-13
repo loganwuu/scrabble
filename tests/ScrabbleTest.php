@@ -145,5 +145,18 @@
             //Assert
             $this->assertEquals("Sorry, please only enter alphabetic letters.", $result);
         }
+
+        function test_7LettersOrLess()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "ABCDEFGH";
+
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals("Sorry, please only enter 7 letters or less.", $result);
+        }
     }
 ?>
