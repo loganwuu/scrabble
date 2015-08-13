@@ -49,10 +49,17 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
   * Input: "a"
   * Output: 1
 
+10. Allow multiple letters
+  * Input: "AEI"
+  * Output: 3
 
-multiple letters
+11. Only alphabetic letters are allowed
+  * Input: 0, 1,2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
+  * Output: "Sorry, please only enter alphabetic letters."
 
-0, 1,2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
+12. Only 7 or less letters are allowed
+  * Input: "ABCDEFGH"
+  * Output: "Sorry, please only enter 7 letters or less."
 
 ## Legal
 
