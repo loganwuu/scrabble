@@ -4,7 +4,9 @@
         function scrabbleScore($letters)
         {
             //Allow alphabetic character(s) only
-            if (!ctype_alpha($letters)) {
+            if (empty($letters)) {
+                return "Please enter a letter or combination of letters.";
+            } elseif (!ctype_alpha($letters)) {
                 return "Sorry, please only enter alphabetic letters.";
             } elseif (strlen($letters) > 7) {
                 return "Sorry, please only enter 7 letters or less.";
