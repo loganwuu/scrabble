@@ -119,5 +119,18 @@
             //Assert
             $this->assertEquals(1, $result);
         }
+
+        function test_multipleLetters()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "AEI";
+
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
     }
 ?>
