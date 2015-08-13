@@ -68,7 +68,18 @@
             $this->assertEquals(4, $result);
         }
 
+        function test_score5_letters()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "K";
 
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals(5, $result);
+        }
 
 
     }
