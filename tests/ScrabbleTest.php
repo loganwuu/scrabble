@@ -132,5 +132,18 @@
             //Assert
             $this->assertEquals(3, $result);
         }
+
+        function test_nonAlphabets()
+        {
+            //Arrange
+            $test_scrabbleScore = new Scrabble;
+            $input = "//";
+
+            //Act
+            $result = $test_scrabbleScore->scrabbleScore($input);
+
+            //Assert
+            $this->assertEquals("Sorry, please only enter alphabetic letters.", $result);
+        }
     }
 ?>

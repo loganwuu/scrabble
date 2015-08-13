@@ -3,23 +3,16 @@
     {
         function scrabbleScore($letters)
         {
+            //Allow alphabetic character(s) only
+            if (!ctype_alpha($letters)) {
+                return "Sorry, please only enter alphabetic letters.";
+            }
+
             //Convert to uppercase letters string
             $uppercase_letters = mb_convert_case($letters, MB_CASE_UPPER, "UTF-8");
 
             //Turn multiple letters into an array
             $letters_array = str_split($uppercase_letters);
-
-            //Scores for letters
-            $score1_letters = array("A", "E", "I", "O", "U", "L", "N", "R", "S", "T");
-            $score2_letters = array("D", "G");
-            $score3_letters = array("B", "C", "M", "P");
-            $score4_letters = array("F", "H", "V", "W", "Y");
-            $score5_letters = array("K");
-            $score8_letters = array("J"," X");
-            $score10_letters = array("Q", "Z");
-
-            // invalid characters
-            $invalid_list = array();
 
             //Assign scores to letters and output the sum
             $total_score = 0;
