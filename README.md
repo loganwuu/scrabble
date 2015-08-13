@@ -1,6 +1,6 @@
 # Scrabble Score Generator
 
-##### A Scrabble Score-returning app built using BDD methodology. 8/13/2015
+##### A Scrabble Score-returning app built using BDD methodology. (8/13/2015)
 
 #### By Logan Wu
 
