@@ -17,33 +17,37 @@ PHP, HTML, CSS, Silex, Twig, PHPUnit, Composer
   * Input: "A"
   * Output: 1
 
-2. If user enters A, E, I, O, U, L, N, R, S, T, it should return score 1.
-  * Input: "A, E, I, O, U, L, N, R, S, T"
+2. If user enters A, E, I, O, U, L, N, R, S, or T, it should return score 1.
+  * Input: "E"
   * Output: 1
 
-3. If user enters D,G, it should return score 2.
-  * Input: "D,G"
+3. If user enters D, or G, it should return score 2.
+  * Input: "D"
   * Output: 2
 
-4. If user enters B, C, M, P, it should return score 3.
-  * Input: "B, C, M, P"
+4. If user enters B, C, M, or P, it should return score 3.
+  * Input: "B"
   * Output: 3
 
-5. If user enters F, H, V, W, Y , it should return score 4.
-  * Input: "F, H, V, W, Y"
+5. If user enters F, H, V, W, or Y , it should return score 4.
+  * Input: "F"
   * Output: 4
 
 6. If user enters K, it should return score 5.
   * Input: "K"
   * Output: 5
 
-7. If user enters J, X, it should return score 8.
-  * Input: "J, X"
+7. If user enters J, or X, it should return score 8.
+  * Input: "J"
   * Output: 8
 
-8. 7. If user enters Q, Z, it should return score 10.
-  * Input: "Q, Z"
+8. If user enters Q, or Z, it should return score 10.
+  * Input: "Q"
   * Output: 10
+
+multiple letters
+capitalization
+0, 1,2, 3, 4, 5, 6, 7, 8, 9, ` ~ ! @ # $ % ^ & * ( ) _ + - = { } | \ : " ; ' < > ? , . /
 
 ## Legal
 
